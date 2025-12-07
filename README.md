@@ -2,6 +2,8 @@
 
 A comprehensive web application that streamlines the Request for Proposal (RFP) workflow using AI to automate procurement processes.
 
+Video Demo Link:https://drive.google.com/file/d/1CCZuKt3jZnqmGNRkGQQbRX-AXELBvz9l/view?usp=drive_link
+
 ## Features
 
 - **Natural Language RFP Creation**: Describe procurement needs in plain English, and AI converts it into a structured RFP
