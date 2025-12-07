@@ -1,0 +1,220 @@
+.proposal-comparison {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header h2 {
+  color: #2c3e50;
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.check-btn, .compare-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.check-btn {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.check-btn:hover {
+  background-color: #7f8c8d;
+}
+
+.compare-btn {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.compare-btn:hover:not(:disabled) {
+  background-color: #8e44ad;
+}
+
+.compare-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.rfp-details, .recommendation-section, .proposals-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.rfp-details h3, .recommendation-section h3, .proposals-section h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.details-grid div {
+  color: #34495e;
+}
+
+.recommendation-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.comparison-summary, .rankings, .final-recommendation {
+  margin-bottom: 1.5rem;
+}
+
+.comparison-summary h4, .rankings h4, .final-recommendation h4 {
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+}
+
+.comparison-summary p, .final-recommendation p {
+  color: #34495e;
+  line-height: 1.6;
+}
+
+.ranking-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.rank-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3498db;
+  min-width: 50px;
+}
+
+.rank-details {
+  flex: 1;
+}
+
+.rank-details strong {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.rank-score {
+  color: #27ae60;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.rank-reasoning {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.proposals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.proposal-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.proposal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+}
+
+.proposal-header h4 {
+  color: #2c3e50;
+  margin: 0;
+}
+
+.completeness-score {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.proposal-details {
+  margin-bottom: 1rem;
+}
+
+.detail-row {
+  margin-bottom: 0.75rem;
+  color: #34495e;
+}
+
+.itemized-prices {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.itemized-prices ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.itemized-prices li {
+  margin-bottom: 0.25rem;
+  color: #34495e;
+}
+
+.proposal-footer {
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #7f8c8d;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: #e74c3c;
+}
+

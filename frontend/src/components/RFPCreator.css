@@ -1,0 +1,116 @@
+.rfp-creator {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rfp-creator h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.rfp-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #e74c3c;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.structured-preview {
+  margin-top: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.structured-preview h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.preview-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.preview-card p {
+  margin-bottom: 0.75rem;
+  color: #34495e;
+}
+
+.preview-card ul {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.preview-card li {
+  margin-bottom: 0.5rem;
+}
+
+.success-message {
+  color: #27ae60;
+  font-weight: 500;
+  text-align: center;
+}
+

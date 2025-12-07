@@ -1,0 +1,205 @@
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7fe;
+  /* Light main background */
+}
+
+/* Sidebar Container */
+.sidebar {
+  width: 280px;
+  background: #111c44;
+  /* Deep dark blue for premium feel */
+  /* If you prefer a lighter sidebar, use white: background: #ffffff; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.05);
+  /* Soft shadow */
+  z-index: 1000;
+}
+
+/* Header & Logo */
+.sidebar-header {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 1rem;
+}
+
+.logo {
+  letter-spacing: 0.5px;
+}
+
+/* Navigation */
+.sidebar-nav {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  color: #a3aed0;
+  /* Muted text for inactive */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+  font-family: 'DM Sans', 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  transform: translateX(3px);
+}
+
+.nav-item.active {
+  background: #4318ff;
+  /* Vibrant purple/blue */
+  color: white;
+  box-shadow: 0 8px 16px rgba(67, 24, 255, 0.25);
+  font-weight: 600;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.3);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: none;
+  /* Optional active indicator */
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer & User Profile */
+.sidebar-footer {
+  padding: 1.5rem;
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.user-avatar {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4318ff 0%, #a482ff 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+  flex: 1;
+  overflow: hidden;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  font-size: 0.8rem;
+  color: #a3aed0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-logout {
+  width: 100%;
+  padding: 0.875rem;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: #ff8f8f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-logout::before {
+  content: '←';
+  /* Or use an icon */
+  font-size: 1.2rem;
+  transition: transform 0.2s;
+}
+
+.btn-logout:hover {
+  background: rgba(255, 87, 87, 0.1);
+  border-color: rgba(255, 87, 87, 0.3);
+  color: #ff5757;
+}
+
+.btn-logout:hover::before {
+  transform: translateX(-3px);
+}
+
+/* Main Content Area Adjustment */
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  min-height: 100vh;
+  background: #f4f7fe;
+  /* Light background for content to contrast */
+  transition: margin-left 0.3s ease;
+}
+
+.content-wrapper {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
